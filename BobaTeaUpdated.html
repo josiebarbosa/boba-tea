@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Boba Order</title>
+    <style>
+        h1 {
+            color: orchid;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid purple;
+            border-collapse: collapse;
+            padding: 5px;
+            background-color: lavender;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(128, 0, 128, 0.5);
+        }
+
+        fieldset {
+            background-color: mintcream;
+        }
+
+        h4 {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body style="background-color:lavenderblush">
+    <h1>Table with Boba Orders</h1>
+    <br>
+    <table>
+        <tr>
+            <th>Drink Name</th>
+            <th>Size</th>
+            <th>Ice Level</th>
+            <th>Sugar Level</th>
+            <th>Topping</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Oolong Milk Tea</td>
+            <td>M</td>
+            <td>50%</td>
+            <td>25%</td>
+            <td>Boba Original</td>
+            <td>$8.00</td>
+        </tr>
+        <tr>
+            <td>Jasmine</td>
+            <td>L</td>
+            <td>25%</td>
+            <td>25%</td>
+            <td>Lychee Jelly</td>
+            <td>$7.00</td>
+        </tr>
+        <tr>
+            <td>Mango Smoothie</td>
+            <td>L</td>
+            <td>0%</td>
+            <td>0%</td>
+            <td>Mango Star Jelly</td>
+            <td>$7.50</td>
+        </tr>
+    </table>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend id="legend1">Add a Drink</legend>
+            <div>
+                <label for="drink">Drink</label>
+                <input type="text" id="drink" name="drink">
+            </div>
+            <br>
+            <div>
+                <legend>Size</legend>
+                <input type="radio" value="Small" id="small" name="size" checked>
+                <label for="small">Small</label><br>
+                <input type="radio" value="Medium" id="medium" name="size">
+                <label for="medium">Medium</label><br>
+                <input type="radio" value="Large" id="large" name="size">
+                <label for="large">Large</label>
+            </div>
+            <br>
+            <div>
+                <label for="ice">Ice Level</label>
+                <select name="ice" id="ice">
+                    <option value="0">0%</option>
+                    <option value="25">25%</option>
+                    <option value="50">50%</option>
+                    <option value="75">75%</option>
+                    <option value="100">100%</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="sugar">Sugar Level</label>
+                <select id="sugar" name="sugar">
+                    <option value="0">0%</option>
+                    <option value="25">25%</option>
+                    <option value="50">50%</option>
+                    <option value="75">75%</option>
+                    <option value="100">100%</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <legend>Topping</legend>
+                <input type="checkbox" value="Boba Original" id="bobaoriginal" name="topping">
+                <label for="bobaoriginal">Boba Original</label><br>
+                <input type="checkbox" value="Lychee" id="lychee" name="topping">
+                <label for="lychee">Lychee</label><br>
+                <input type="checkbox" value="Mango" id="mango" name="topping">
+                <label for="mango">Mango</label>
+            </div>
+        </fieldset>
+        <h4>Click the button below to place your order! Thank you!</h4>
+        <button type="submit">Place Order</button>
+    </form>
+    <br>
+    <img src="./bobatea.jpg" alt="Two Boba Teas" style="width:400px;height:315px;">
+</body>
+
+</html>
